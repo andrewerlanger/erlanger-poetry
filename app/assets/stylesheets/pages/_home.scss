@@ -1,1 +1,135 @@
 // Specific CSS for your home-page
+.banner {
+  text-align: center;
+  height: calc(100vh - 60px);
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured {
+  margin-top: 54px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  align-content: center;
+  justify-content: center;
+  h2 {
+    color: $white;
+  }
+}
+
+.featured-brand {
+  width: 180px;
+  margin: 18px;
+  color: $white;
+  opacity: 0.9;
+  transition: ease all 0.3s;
+  &:hover {
+    transform: scale(1.015);
+    opacity: 0.72;
+    cursor: pointer;
+  }
+}
+
+.banner-content {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  padding: 18px 36px;
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 25px;
+  }
+}
+
+.homepage-heading {
+  margin: 36px auto;
+  &:before, &:after {
+    content: " ";
+    display: inline-block;
+    height: 2px;
+    margin: 0 10px;
+    width: 80px;
+    zoom: 1;
+    color: $gray;
+    background: $gray;
+    vertical-align: middle;
+  }
+}
+
+.homepage-content {
+  margin: 0 auto;
+  margin-bottom: 36px;
+  width: 72vw;
+  min-height: 330px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.homepage-image {
+  position: absolute;
+  background-size: cover !important;
+  background-position: center;
+  width: 27vw;
+  height: 330px;
+  z-index: -5;
+  border-radius: 3px;
+  box-shadow: 0.3px 0.3px 0.3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.homepage-text {
+  position: absolute;
+  left: calc(27vw - 30px);
+  z-index: 5;
+  max-width: calc(100% - 27vw + 30px);
+  background: $white;
+  border-radius: 3px;
+  box-shadow: 0.3px 0.3px 0.3px 0 rgba(0, 0, 0, 0.3);
+  padding: 21px;
+  padding-bottom: 9px;
+  p {
+    font-size: 1.8rem;
+    line-height: 30px;
+    letter-spacing: 0.03rem;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .homepage-heading:before, .homepage-heading:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .homepage-content {
+    position: static;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .homepage-image {
+    width: 80%;
+    position: static;
+    display: block;
+    margin: 9px;
+    margin-bottom: 0;
+    border-radius: 3px 3px 0 0;
+  }
+
+  .homepage-text {
+    max-width: 80%;
+    width: 80%;
+    position: static;
+    display: block;
+    margin: 9px;
+    margin-top: 0;
+    border-radius: 0 0 3px 3px;
+  }
+}

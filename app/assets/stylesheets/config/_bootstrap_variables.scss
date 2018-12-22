@@ -13,15 +13,14 @@ $font-size-base: 18px;
 $gray-base:       $gray;
 $brand-primary:   $blue;
 $brand-success:   $green;
-$brand-info:      $yellow;
-$brand-danger:    $red;
-$brand-warning:   $orange;
+$brand-info:      $teel;
+$brand-danger:    $gray;
+$brand-warning:   $gray;
 
 // Buttons & inputs' radius
-$border-radius-base:  2px;
-$border-radius-large: 2px;
-$border-radius-small: 2px;
-
+$border-radius-base:  3px;
+$border-radius-large: 3px;
+$border-radius-small: 3px;
 
 // Patch to make simple_form compatible with bootstrap 3
 .invalid-feedback {
@@ -51,3 +50,55 @@ $border-radius-small: 2px;
 }
 
 // Override other variables below!
+* {
+  margin: 0;
+  padding: 0;
+  color: $gray;
+}
+
+h1, h2, h3, p {
+  color: $gray;
+}
+
+#bootstrap-overrides {
+
+  a, i {
+    text-decoration: none !important;
+    transition: ease all 0.3s !important;
+    color: $gray;
+    &:hover {
+      transform: scale(1.015, 1.015);
+      opacity: 0.72;
+      color: $teel;
+    }
+  }
+
+  .text-link {
+    color: $teel;
+    font-weight: bold;
+  }
+
+  .footer-links a {
+    color: $white;
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    padding: 0px 10px;
+  }
+}
+
+.custom-container {
+  width: 95vw;
+  padding: 0 9px;
+  margin: 0 auto;
+}
+
+.flexbox-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.ensure-height {
+  min-height: calc(100vh - 120px);
+}
