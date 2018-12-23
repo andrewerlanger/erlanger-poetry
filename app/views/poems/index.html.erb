@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="index-heading">
+    <h1>Here's a small selection of my poems.</h1>
+    <p>I sure hope you like them...</p>
+  </div>
+
+  <div class="row">
+    <% @poems.each do |poem| %>
+
+    <% photo_string = "https://picsum.photos/#{rand(600..800)}/#{rand(600..800)}" %>
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= photo_string %>);">
+        <div class="card-category"><%= poem.category %></div>
+        <div class="card-description">
+          <h2><%= poem.title %></h2>
+        </div>
+        <%= link_to "", poem_path(poem), class: "card-link" %>
+        <!-- <a class="card-link" href="#" ></a> -->
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div class="add-space"></div>
+</div>
+

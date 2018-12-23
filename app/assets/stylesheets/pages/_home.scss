@@ -49,16 +49,18 @@
 
 .homepage-heading {
   margin: 36px auto;
-  &:before, &:after {
+  &:after {
     content: " ";
     display: inline-block;
     height: 2px;
     margin: 0 10px;
-    width: 80px;
+    width: 270px;
     zoom: 1;
-    color: $gray;
-    background: $gray;
+    background: $white;
     vertical-align: middle;
+  }
+  h1 {
+    color: $white;
   }
 }
 
@@ -97,12 +99,6 @@
     font-size: 1.8rem;
     line-height: 30px;
     letter-spacing: 0.03rem;
-  }
-}
-
-@media screen and (max-width: 1060px) {
-  .homepage-heading:before, .homepage-heading:after {
-    display: none;
   }
 }
 

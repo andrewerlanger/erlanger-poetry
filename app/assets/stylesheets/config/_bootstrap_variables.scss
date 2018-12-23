@@ -56,7 +56,11 @@ $border-radius-small: 3px;
   color: $gray;
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
+  color: $white;
+}
+
+p {
   color: $gray;
 }
 
@@ -78,8 +82,12 @@ h1, h2, h3, p {
     font-weight: bold;
   }
 
+  .date {
+    color: $teel;
+  }
+
   .footer-links a {
-    color: $white;
+    color: $gray;
     font-size: 1.5rem;
     letter-spacing: 0.15rem;
     padding: 0px 10px;
