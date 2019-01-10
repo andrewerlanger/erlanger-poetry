@@ -3,7 +3,7 @@
   text-align: center;
   height: calc(100vh - 60px);
   background-size: cover !important;
-  background-position: center;
+  background-position: bottom;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,19 +36,24 @@
 }
 
 .banner-content {
-  background: rgba(255, 255, 255, 0.3);
+  // background: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
   padding: 18px 36px;
   h1 {
     font-size: 50px;
+    color: $white;
   }
   p {
     font-size: 25px;
   }
 }
 
+.tagline {
+  letter-spacing: 0.5rem;
+}
+
 .homepage-heading {
-  margin: 36px auto;
+  margin: 36px auto 0 auto;
   &:after {
     content: " ";
     display: inline-block;
@@ -60,8 +65,12 @@
     vertical-align: middle;
   }
   h1 {
-    color: $white;
+    color: $gray;
   }
+}
+
+.quote-author {
+  color: $teel;
 }
 
 .homepage-content {
@@ -82,7 +91,8 @@
   height: 330px;
   z-index: -5;
   border-radius: 3px;
-  box-shadow: 0.3px 0.3px 0.3px 0 rgba(0, 0, 0, 0.3);
+  // box-shadow: 0.3px 0.3px 0.3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 14px rgba(126,87,88,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
 .homepage-text {
@@ -92,13 +102,21 @@
   max-width: calc(100% - 27vw + 30px);
   background: $white;
   border-radius: 3px;
-  box-shadow: 0.3px 0.3px 0.3px 0 rgba(0, 0, 0, 0.3);
+  // box-shadow: 0.3px 0.3px 0.3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 14px rgba(126,87,88,.1), 0 3px 6px rgba(0,0,0,.08);
   padding: 21px;
   padding-bottom: 9px;
   p {
     font-size: 1.8rem;
-    line-height: 30px;
+    line-height: 24px;
     letter-spacing: 0.03rem;
+  }
+}
+
+.text-main {
+  p {
+    font-size: 1.5rem;
+    line-height: 21px;
   }
 }
 

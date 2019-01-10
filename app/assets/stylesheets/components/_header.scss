@@ -1,5 +1,5 @@
 .poem-container {
-  width: 60vw;
+  width: calc(100vw - 90px);
   margin: 0 auto;
 }
 
@@ -14,14 +14,14 @@
   color: $white;
   border-radius: 3px 3px 0 0;
   h1 {
+    padding-top: 18px;
     font-size: 6rem;
   }
 }
 
 .poem-text {
   background: $white;
-  padding: 36px;
-  border-radius: 0 0 3px 3px;
+  margin: 36px auto;
+  padding-left: 18px;
+  border-left: 3px solid $teel;
 }
-
-

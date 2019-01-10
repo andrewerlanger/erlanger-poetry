@@ -1,6 +1,6 @@
 /* Main navbar */
 .navbar-wagon {
-  background: white;
+  background: $gray;
   transition: all 0.3s ease;
   height: 60px;
   padding: 0px calc(2.5vw + 9px);
@@ -11,10 +11,10 @@
 
 #logo {
   cursor: pointer;
-  h3 {
+  h3, strong {
     margin: 0;
     padding: 0;
-    color: $gray;
+    color: $white;
   }
   &:hover {
     transform: none;
@@ -34,6 +34,7 @@
   margin-left: 36px;
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
+  color: $white;
 }
 
 /* Dropdown menu */

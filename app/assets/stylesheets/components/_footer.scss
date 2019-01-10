@@ -1,5 +1,5 @@
 .footer {
-  background: $white;
+  background: $gray;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,5 +10,15 @@
 .footer-copyright {
   font-size: 1.2rem;
   letter-spacing: 0.15rem;
-  color: $gray;
+  color: $white;
+}
+
+// .footer-links in #bootstrap-overrides
+
+@media screen and (max-width: 860px) {
+
+  .footer-links {
+    display: none;
+  }
+
 }
