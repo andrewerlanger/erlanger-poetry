@@ -1,6 +1,7 @@
 .poem-container {
   width: calc(100vw - 90px);
   margin: 0 auto;
+  display: flex;
 }
 
 .header {
@@ -12,16 +13,38 @@
   align-items: center;
   justify-content: center;
   color: $white;
-  border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 3px 3px;
   h1 {
     padding-top: 18px;
     font-size: 6rem;
   }
 }
 
+.poem-header {
+  width: 50%;
+  text-align: center;
+  height: inherit;
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 2px 14px rgba(126,87,88,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
 .poem-text {
+  width: calc(40% - 36px);
   background: $white;
-  margin: 36px auto;
-  padding-left: 18px;
-  border-left: 3px solid $teel;
+  padding: 0 18px;
+  // border-left: 3px solid $teel;
+  margin-left: 36px;
+  h2 {
+    margin-top: 0
+  }
+}
+
+.backlink {
+  color: $teel;
 }

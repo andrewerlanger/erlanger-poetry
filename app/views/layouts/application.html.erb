@@ -12,7 +12,13 @@
   </head>
   <body>
     <div id="bootstrap-overrides">
-      <%= render 'shared/navbar' %>
+
+      <% if current_page?('/') %>
+        <%= render 'shared/navbar-home' %>
+      <% else %>
+        <%= render 'shared/navbar' %>
+      <% end %>
+
       <div class="ensure-height">
         <%= yield %>
       </div>

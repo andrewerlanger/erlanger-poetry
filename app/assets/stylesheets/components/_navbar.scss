@@ -9,6 +9,18 @@
   justify-content: space-between;
 }
 
+.navbar-wagon-home {
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 60px;
+  padding: 0px calc(2.5vw + 9px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+}
+
 #logo {
   cursor: pointer;
   h3, strong {
@@ -56,4 +68,8 @@
   position: absolute;
   right: 10px;
   top: -6px;
+}
+
+.dropdown > i {
+  color: $white;
 }
