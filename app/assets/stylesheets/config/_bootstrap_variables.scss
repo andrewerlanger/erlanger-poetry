@@ -77,6 +77,11 @@ p {
     }
   }
 
+  ::selection {
+    color: white;
+    background: $teel;
+  }
+
   .text-link {
     color: $teel;
     font-weight: bold;
