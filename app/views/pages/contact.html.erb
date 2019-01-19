@@ -13,32 +13,34 @@
       <!-- BODY TEXT -->
       <div class="contact-text">
         <p>If you’d like to collaborate on a project, commission a poem, or just chat about your experiences, I’d love to hear from you.</p>
-        <p class="final-paragraph">Feel free to reach out via the contact form on this page, or send me an email:
+        <p class="final-paragraph">Feel free to reach out via the contact form on this page, or send me an email directly:
         <br><br><a href="mailto:jennyerlanger@optusnet.com.au" target="_blank">jennyerlanger@optusnet.com.au</a></p>
       </div>
 
       <!-- FORM -->
-      <div class="contact-form">
-        <form action="mailto:a.erlanger@gmail.com" method="post" enctype="text/plain">
+      <div class="form-flex">
+        <div class="contact-form">
+          <form id="full-form" action="https://formspree.io/a.erlanger@gmail.com" target="_blank" method="post" enctype="text/plain">
 
-        <div class="name-and-email">
+          <div class="name-and-email">
 
-          <div class="form-name">
-            <span class="form-label">Name</span><br>
-            <input class="default-form" type="text" name="name" placeholder="Puggo Claire">
+            <div class="form-name">
+              <span class="form-label">Name</span><br>
+              <input class="default-form right-margin" type="text" name="name" placeholder="Alison Puggo">
+            </div>
+
+            <div class="form-email">
+              <span class="form-label">Email</span><br>
+              <input class="default-form" type="email" name="_replyto" placeholder="alison@puggo.com" required>
+            </div>
+
           </div>
 
-          <div class="form-email">
-            <span class="form-label">E-mail Address</span><br>
-            <input class="default-form" type="text" name="mail" placeholder="puggo@claire.com">
-          </div>
-
+          <span class="form-label">Message</span><br>
+          <textarea id="comment-field" name="message" class="default-form" rows="3" required></textarea>
+          <input id="submit-button" class="form-button" type="submit" value="Send">
+          </form>
         </div>
-
-        <span class="form-label">Message</span><br>
-        <input class="default-form" type="text" name="comment" size="50"><br><br>
-        <input class="form-button" type="submit" value="Send">
-        </form>
       </div>
 
   </div>
@@ -46,5 +48,16 @@
 </div>
 
 <div class="add-space"></div>
+
+<script>
+  let submitButton = document.getElementById("submit-button");
+  let fullForm = document.getElementById("full-form");
+  submitButton.onmouseup = resetForm;
+
+  function resetForm(e) {
+    alert("Thank you, I'll get back to you as soon as I can :)");
+    fullForm.reset();
+  }
+</script>
 
 

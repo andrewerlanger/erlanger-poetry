@@ -29,7 +29,6 @@
   opacity: 0.9;
   transition: ease all 0.3s;
   &:hover {
-    transform: scale(1.015);
     opacity: 0.72;
     cursor: pointer;
   }
@@ -42,6 +41,7 @@
   h1 {
     font-size: 50px;
     color: $white;
+    letter-spacing: 0.1rem;
   }
   p {
     font-size: 25px;
@@ -49,7 +49,7 @@
 }
 
 .tagline {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.25rem;
 }
 
 .homepage-heading {
@@ -129,7 +129,7 @@
   }
 
   .homepage-image {
-    width: 80%;
+    width: 90%;
     position: static;
     display: block;
     margin: 9px;
@@ -138,8 +138,8 @@
   }
 
   .homepage-text {
-    max-width: 80%;
-    width: 80%;
+    max-width: 90%;
+    width: 90%;
     position: static;
     display: block;
     margin: 9px;

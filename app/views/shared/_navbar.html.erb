@@ -18,9 +18,9 @@
     <div class="dropdown">
       <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#" class="navbar-wagon-item">POEMS</a></li>
-        <li><a href="#" class="navbar-wagon-item">ABOUT</a></li>
-        <li><a href="#" class="navbar-wagon-item">CONTACT</a></li>
+        <li><%= link_to "POEMS", poems_path, class: "navbar-wagon-item" %></li>
+        <li><%= link_to "ABOUT", about_path, class: "navbar-wagon-item" %></li>
+        <li><%= link_to "CONTACT", contact_path, class: "navbar-wagon-item" %></li>
       </ul>
     </div>
   </div>
