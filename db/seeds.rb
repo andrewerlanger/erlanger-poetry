@@ -52,7 +52,7 @@ poem = Poem.create!(
         "So, why, I ask you,\n"\
         "one and all –\n"\
         "why can’t I catch a stupid ball?\n",
-  category: 'school',
+  category: 'life',
   photo: "https://res.cloudinary.com/dkft9hkkv/image/upload/v1547909594/Erlanger%20Poetry/butterfingers.jpg"
 )
 
@@ -82,7 +82,7 @@ poem = Poem.create!(
         "Will I make it?\n"\
         "I have!\n"\
         "And I’ve won!\n",
-  category: 'parents',
+  category: 'sport',
   photo: "https://res.cloudinary.com/dkft9hkkv/image/upload/v1547910955/Erlanger%20Poetry/windmill.jpg"
 )
 
@@ -96,7 +96,7 @@ poem = Poem.create!(
         "all those I want to keep,\n"\
         "then choose the one I want at night\n"\
         "before I go to sleep.\n",
-  category: 'friends',
+  category: 'home',
   photo: "https://res.cloudinary.com/dkft9hkkv/image/upload/v1547908783/Erlanger%20Poetry/dreams.jpg"
 )
 
@@ -126,7 +126,7 @@ poem = Poem.create!(
         "won’t be riding through the scrub.\n"\
         "My Grandpa’s little farm is…\n"\
         "just some worms inside a tub!\n",
-  category: 'friends',
+  category: 'outdoors',
   photo: "https://res.cloudinary.com/dkft9hkkv/image/upload/v1547908783/Erlanger%20Poetry/grandpas_farm.jpg"
 )
 
@@ -150,7 +150,7 @@ poem = Poem.create!(
         "I may seem quite ungrateful\n"\
         "and perhaps a little rude,\n"\
         "but, they still all taste like vegetables to me!\n",
-  category: 'friends',
+  category: 'food',
   photo: "https://res.cloudinary.com/dkft9hkkv/image/upload/v1547908783/Erlanger%20Poetry/food_art.jpg"
 )
 
@@ -172,7 +172,7 @@ poem = Poem.create!(
         "then shaken to unstick whatever’s stuck.\n"\
         "Their stomachs start to rumble, then from somewhere deep inside\n"\
         "they vomit all their contents in the truck.\n",
-  category: 'friends',
+  category: 'home',
   photo: "https://res.cloudinary.com/dkft9hkkv/image/upload/v1547908783/Erlanger%20Poetry/garbage_day.jpg"
 )
 
@@ -202,7 +202,7 @@ poem = Poem.create!(
         "relax beside your tree.\n"\
         "Give your mind a chance to rest.\n"\
         "It’s time to simply be.\n",
-  category: 'friends',
+  category: 'life',
   photo: "https://res.cloudinary.com/dkft9hkkv/image/upload/v1547908784/Erlanger%20Poetry/the_way_to_be.jpg"
 )
 
@@ -228,6 +228,6 @@ poem = Poem.create!(
         "I feel a little fluttering of hope.\n"\
         "Although I know my problems haven’t really gone away\n"\
         "I thank the sky for helping me to cope.\n",
-  category: 'friends',
+  category: 'outdoors',
   photo: "https://res.cloudinary.com/dkft9hkkv/image/upload/v1547908784/Erlanger%20Poetry/night_magic.jpg"
 )
