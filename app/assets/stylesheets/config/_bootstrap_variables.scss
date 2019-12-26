@@ -4,21 +4,21 @@
 // 3. You can override them below!
 
 // General style
-$font-family-sans-serif:  $body-font;
-$headings-font-family:    $headers-font;
-$body-bg:                 $white;
+$font-family-sans-serif: $body-font;
+$headings-font-family: $headers-font;
+$body-bg: $white;
 $font-size-base: 18px;
 
 // Colors
-$gray-base:       $gray;
-$brand-primary:   $blue;
-$brand-success:   $green;
-$brand-info:      $teel;
-$brand-danger:    $gray;
-$brand-warning:   $gray;
+$gray-base: $gray;
+$brand-primary: $blue;
+$brand-success: $green;
+$brand-info: $teel;
+$brand-danger: $gray;
+$brand-warning: $gray;
 
 // Buttons & inputs' radius
-$border-radius-base:  3px;
+$border-radius-base: 3px;
 $border-radius-large: 3px;
 $border-radius-small: 3px;
 
@@ -38,14 +38,14 @@ $border-radius-small: 3px;
   border-color: $red;
 }
 
-.was-validated .form-control:invalid ~ .invalid-feedback,
-.was-validated .form-control:invalid ~ .invalid-tooltip,
-.form-control.is-invalid ~ .invalid-feedback,
-.form-control.is-invalid ~ .invalid-tooltip,
-.was-validated .custom-select:invalid ~ .invalid-feedback,
-.was-validated .custom-select:invalid ~ .invalid-tooltip,
-.custom-select.is-invalid ~ .invalid-feedback,
-.custom-select.is-invalid ~ .invalid-tooltip {
+.was-validated .form-control:invalid~.invalid-feedback,
+.was-validated .form-control:invalid~.invalid-tooltip,
+.form-control.is-invalid~.invalid-feedback,
+.form-control.is-invalid~.invalid-tooltip,
+.was-validated .custom-select:invalid~.invalid-feedback,
+.was-validated .custom-select:invalid~.invalid-tooltip,
+.custom-select.is-invalid~.invalid-feedback,
+.custom-select.is-invalid~.invalid-tooltip {
   display: block;
 }
 
@@ -56,7 +56,9 @@ $border-radius-small: 3px;
   color: $gray;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: $white;
 }
 
@@ -66,14 +68,13 @@ p {
 
 #bootstrap-overrides {
 
-  a, i {
+  a,
+  i {
     text-decoration: none !important;
     transition: ease all 0.3s !important;
-    // color: $gray;
+
     &:hover {
-      transform: scale(1.015, 1.015);
       opacity: 0.72;
-      color: $teel;
     }
   }
 

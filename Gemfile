@@ -15,13 +15,15 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem 'simple_form'
+gem 'carrierwave'
+gem 'cloudinary'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
 group :development, :test do
-  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'listen', '~> 3.0.5'
   gem 'spring'

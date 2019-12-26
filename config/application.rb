@@ -1,6 +1,7 @@
 require_relative 'boot'
 
 require 'rails/all'
+require 'carrierwave'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -21,4 +22,16 @@ module ErlangerPoetry
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
   end
+end
+
+CarrierWave.configure do |config|
+  config.cache_storage = :file
+ end
+
+ Cloudinary.config do |config|
+  config.cloud_name = 'dkft9hkkv'
+  config.api_key = '354286396534621'
+  config.api_secret = 'B88HxFDi7FW5npOPtgZ6SxxuezI'
+  config.secure = true
+  config.cdn_subdomain = true
 end

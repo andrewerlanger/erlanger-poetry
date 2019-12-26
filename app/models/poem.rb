@@ -1,5 +1,7 @@
 class Poem < ApplicationRecord
 
+  mount_uploader :photo, PhotoUploader
+
   MONTHS     = [nil, 'January', 'February', 'March', 'April',
                 'May', 'June', 'July', 'August', 'September',
                 'October', 'November', 'December']

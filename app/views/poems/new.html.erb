@@ -1,0 +1,18 @@
+<div class="add-space"></div>
+
+<div class="poem-container">
+
+  <div>
+    <h2>Add a New Poem</h2>
+  </div>
+
+  <%= simple_form_for @poem, url: '/add-poem-as-admin' do |f| %>
+    <%= f.input :title %>
+    <%= f.input :body, as: :text, input_html: { rows: 10 } %>
+    <%= f.input :category %>
+    <%= f.input :photo, label: "Puggo Illustration" %>
+    <%= f.input :photo_cache, as: :hidden %>
+    <%= f.button :submit %>
+  <% end %>
+
+</div>
